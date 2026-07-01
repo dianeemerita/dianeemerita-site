@@ -80,7 +80,7 @@ const About: React.FC = () => {
                     </div>
 
                     <div className="about-image about-image--desktop fade-up">
-                        <img src="src/assets/images/ImageAbout.webp" alt="Diane Emerita portrait" />
+                        <img src="../../../assets/images/ImageAbout.webp" alt="Diane Emerita portrait" />
                     </div>
                 </div>
             </div>

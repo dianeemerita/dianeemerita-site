@@ -1,8 +1,8 @@
 import React from "react";
 import './Hero.css'
 
-const heroImage = "src/assets/images/Hero-wide.webp";
-const heroImageMobile = "src/assets/images/Hero.webp";
+const heroImage = "../../../assets/images/Hero-wide.webp";
+const heroImageMobile = "../../../assets/images/Hero.webp";
 
 const Hero: React.FC = () => {
     return(
