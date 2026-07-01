@@ -1,8 +1,8 @@
 import type { Album } from '../types';
 
-import porcelainImage from '../../assets/albums/porcelain-heart.jpeg'
-import indigoImage from '../../assets/albums/indigo-bruised.jpeg'
-import travellingImage from '../../assets/albums/traveling-forever.jpg'
+import porcelainImage from '../assets/albums/porcelain-heart.jpeg'
+import indigoImage from '../assets/albums/indigo-bruised.jpeg'
+import travellingImage from '../assets/albums/traveling-forever.jpg'
 
 export const albums: Album[] = [
   { title: "Porcelain Heart", 
