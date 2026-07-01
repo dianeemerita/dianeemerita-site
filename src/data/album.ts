@@ -1,5 +1,9 @@
 import type { Album } from '../types';
 
+import porcelainImage from '../../assets/albums/porcelain-heart.jpeg'
+import indigoImage from '../../assets/albums/indigo-bruised.jpeg'
+import travellingImage from '../../assets/albums/traveling-forever.jpg'
+
 export const albums: Album[] = [
   { title: "Porcelain Heart", 
     year: 2026,
@@ -8,15 +12,8 @@ export const albums: Album[] = [
     soundcloudURL: "https://soundcloud.com/diane42348/sets/porcelain-heart-5",
     youtubeMusicURL: "https://music.youtube.com/playlist?list=OLAK5uy_mkoA9tj2RAx4PYvIUQYj7uI3gbh3G9MCs&si=YcXVtHG8HiPHATg8",
     tidalURL: "https://tidal.com/album/504695417",
-    cover: new URL('../../assets/albums/porcelain-heart.jpeg', import.meta.url).href,
+    cover: porcelainImage,
   },
-  /*
-  { title: "Ghost Stories", 
-    year: 2025,
-    spotifyURL: "https://open.spotify.com/album/4bUHlsF6wKCFL4Q2PTSxS2?si=M4LMZw3jS-erxBcsa3PeiA",
-    cover: new URL('../../assets/albums/ghost-stories.jpeg', import.meta.url).href,
-  },
-  */
   { title: "Indigo Bruised", 
     year: 2024,
     spotifyURL: "https://open.spotify.com/album/4BxfBMRKQhFiIw1EpEm4Et?si=xrGtOekAStOR5pbtc0k5Xg",
@@ -24,7 +21,7 @@ export const albums: Album[] = [
     soundcloudURL: "https://soundcloud.com/diane42348/sets/indigo-bruised",
     youtubeMusicURL: "https://music.youtube.com/playlist?list=OLAK5uy_kyl83s4JyxIcWrhUZS1s1ud64796_2-5Q&si=h__0ZWdanEHw9cCG",
     tidalURL: "https://tidal.com/album/398311849",
-    cover: new URL('../../assets/albums/indigo-bruised.jpeg', import.meta.url).href,
+    cover: indigoImage,
   },
   { title: "Traveling Forever", 
     year: 2024,
@@ -33,23 +30,6 @@ export const albums: Album[] = [
     soundcloudURL: "https://soundcloud.com/diane42348/sets/travelling-forever",
     youtubeMusicURL: "https://music.youtube.com/playlist?list=OLAK5uy_kITxk36TL34N5aiG1kbLaLWk_xfatA3eE&si=a-7vjFJprJTIuxqJ",
     tidalURL: "https://tidal.com/album/353964045",
-    cover: new URL('../../assets/albums/traveling-forever.jpg', import.meta.url).href,
+    cover: travellingImage,
   },
-  /*
-  { title: "Body In Distress", 
-    year: 2023,
-    spotifyURL: "https://open.spotify.com/album/1O9o3I609rj3axmSeIYFIo?si=yUjpc6WlTCmr3VTIyDrvlw",
-    cover: new URL('../../assets/albums/body-in.jpg', import.meta.url).href,
-  },
-  { title: "Heavy Yet Tiny", 
-    year: 2023,
-    spotifyURL: "https://open.spotify.com/album/2OBz7yyBv3an1RzUQJXsMp?si=LH9YVCqzSZuQyKQFKzt8JA",
-    cover: new URL('../../assets/albums/heavy-yet.jpeg', import.meta.url).href,
-  },
-  { title: "Black Blue Sky", 
-    year: 2020,
-    spotifyURL: "https://open.spotify.com/album/11gfwyRdboDshp0DNrNput?si=EVhSYdTOQDGEecKSFEV2hg",
-    cover: new URL('../../assets/albums/black-blue.jpeg', import.meta.url).href,
-  },
-  */
 ];
