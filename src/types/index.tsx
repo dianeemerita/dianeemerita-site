@@ -22,7 +22,7 @@ export interface TourDate {
 export interface Video{
   title: string;
   year: number;
-  youtubeId;
+  youtubeId: string;
   description?: string;
 }
 
