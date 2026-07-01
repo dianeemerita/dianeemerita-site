@@ -1,0 +1,87 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* Desktop: show wide image, hide portrait */
+.hero-img--mobile { display: none; }
+.hero-img--desktop { display: block; }
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 30, 18, 0.7) 0%,
+    rgba(20, 30, 18, 0.15) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 0 5rem clamp(5rem, 12vh, 10rem) 3rem;
+}
+
+.hero-name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  max-width: fit-content;
+  position: relative;
+}
+
+.hero-name {
+  font-size: clamp(4.5rem, 8vw, 10rem);
+  font-weight: 200;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+  color: var(--beige-pale);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  margin-bottom: 0;
+  font-variation-settings: "opsz" 72, "wght" 200;
+}
+
+.hero-name em { 
+  font-style: italic; 
+}
+
+@media (max-width: 900px) {
+
+  /* Swap to portrait image */
+  .hero-img--desktop { display: none; }
+  .hero-img--mobile {
+    display: block;
+    object-position: center 18%;
+  }
+
+  .hero-content {
+    padding: 0 2rem clamp(6rem, 18vh, 11rem); 
+    min-height: 230px;
+  }
+
+  .hero-name {
+    font-size: clamp(4.8rem, 14vw, 5.5rem);
+  }
+}

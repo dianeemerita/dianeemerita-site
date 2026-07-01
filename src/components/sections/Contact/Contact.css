@@ -1,0 +1,143 @@
+/* Contact Section */
+.section-contact {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.contact-bg--mobile {
+  display: none;
+}
+
+.contact-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 3rem;
+  align-items: start;
+  border-top: 1px solid rgba(102, 124, 96, 0.35);
+  padding-top: 2.5rem;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-col--center {
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-col--right {
+  align-items: flex-end;
+  justify-self: end;
+}
+
+.contact-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.contact-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(200, 194, 180, 0.25);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  width: fit-content;
+}
+
+.contact-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.contact-copyright {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon-link svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.social-icon-link:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive Contact */
+@media (max-width: 900px) {
+  .contact-bg--desktop {
+    display: none;
+  }
+
+  .contact-bg--mobile {
+    display: block;
+    object-position: top center;
+  }
+
+  .contact-bar {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-col--center {
+    align-items: flex-start;
+  }
+
+  .contact-col--right {
+    align-items: flex-start;
+    justify-self: start;
+  }
+
+  .contact-link {
+    word-break: break-all;
+  }
+}
