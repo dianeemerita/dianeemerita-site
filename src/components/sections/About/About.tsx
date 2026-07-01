@@ -2,6 +2,7 @@ import React from "react";
 import './About.css'
 import bg1 from "../../../assets/backgrounds/bg1.webp";
 import bg8 from "../../../assets/backgrounds/bg8.webp";
+import albumImage from "../../../assets/images/ImageAbout.webp"
 import {
     Accordion,
     AccordionItem,
@@ -80,7 +81,7 @@ const About: React.FC = () => {
                     </div>
 
                     <div className="about-image about-image--desktop fade-up">
-                        <img src="../../../assets/images/ImageAbout.webp" alt="Diane Emerita portrait" />
+                        <img src={albumImage} alt="Diane Emerita portrait" />
                     </div>
                 </div>
             </div>
